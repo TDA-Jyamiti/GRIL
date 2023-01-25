@@ -21,13 +21,12 @@ Then we need to compile mpml.
 Please follow `experiments.ipynb` for instructions on how to run the code.
 
 ## Graph Experiments
-You may use `run_graph_experiment.sh` to reproduce the results in the paper.
+You may use `run_graph_experiment.sh` to reproduce the results in the paper. Please download the precomputed landscapes from this [link](https://drive.google.com/file/d/1WWXCk3X5aKoHTlybmCnB9YLnieqpe8Mp/view?usp=share_link) and unzip the zip file to train the model faster. After unzipping it should have a directory called `graph_landscapes`.
 
 
     ./run_graph_experiment.sh PROTEINS 
 
-Run this script to reproduce the experiment on PROTEINS dataset. 
-
+Run this script to reproduce the experiment on PROTEINS dataset.
 
 
 
