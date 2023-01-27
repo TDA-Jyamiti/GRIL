@@ -8,6 +8,11 @@ from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.base import BaseEstimator, TransformerMixin
 import argparse
 
+"""
+Edited by Anonymous (will be updated after review) for the experiments.
+Original Author: Mathieu Carrière
+This part of code is from https://github.com/MathieuCarriere/multipers/blob/main/experiments.ipynb
+"""
 class MultiPersistenceLandscapeWrapper(BaseEstimator, TransformerMixin):
     """
     Scikit-Learn wrapper for cross-validating Multiparameter Persistence Landscapes.
