@@ -1,6 +1,0 @@
-setup.py
-/scratch1/mukher26/mpml_graph_repo/zigzag/./multipers.cpp
-mpml.egg-info/PKG-INFO
-mpml.egg-info/SOURCES.txt
-mpml.egg-info/dependency_links.txt
-mpml.egg-info/top_level.txt

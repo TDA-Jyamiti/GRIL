@@ -1,0 +1,15 @@
+# ninja log v5
+0	19238	1674245376000000000	/scratch/bell/mukher26/mpml_graph_static/zigzag/build/temp.linux-x86_64-cpython-39/scratch/bell/mukher26/mpml_graph_static/zigzag/multipers.o	9a2b7b576f7f16a
+274	16567	1675726632000000000	/scratch/bell/mukher26/mpml_graph_static/zigzag/build/temp.linux-x86_64-cpython-39/scratch/bell/mukher26/mpml_graph_static/zigzag/multipers.o	9a2b7b576f7f16a
+269	16888	1675728138000000000	/scratch/bell/mukher26/mpml_graph_static/zigzag/build/temp.linux-x86_64-cpython-39/scratch/bell/mukher26/mpml_graph_static/zigzag/multipers.o	9a2b7b576f7f16a
+26	24273	1675902702086332969	/u/scratch1/ssamaga/mpml_altered_bdry/zigzag/build/temp.linux-x86_64-cpython-39/u/scratch1/ssamaga/mpml_altered_bdry/zigzag/multipers.o	72e776d2b1d272f3
+5160	33366	1675906707159817794	/u/scratch1/ssamaga/mpml_altered_bdry/zigzag/build/temp.linux-x86_64-cpython-39/u/scratch1/ssamaga/mpml_altered_bdry/zigzag/multipers.o	72e776d2b1d272f3
+0	17526	1675907214000000000	/scratch/bell/mukher26/mpml_graph_static/zigzag/build/temp.linux-x86_64-cpython-39/scratch/bell/mukher26/mpml_graph_static/zigzag/multipers.o	9a2b7b576f7f16a
+31	17395	1675907889000000000	/scratch/bell/mukher26/mpml_graph_static/zigzag/build/temp.linux-x86_64-cpython-39/scratch/bell/mukher26/mpml_graph_static/zigzag/multipers.o	9a2b7b576f7f16a
+257	17692	1675908048000000000	/scratch/bell/mukher26/mpml_graph_static/zigzag/build/temp.linux-x86_64-cpython-39/scratch/bell/mukher26/mpml_graph_static/zigzag/multipers.o	9a2b7b576f7f16a
+308	16897	1675909436000000000	/scratch/bell/mukher26/mpml_graph_static/zigzag/build/temp.linux-x86_64-cpython-39/scratch/bell/mukher26/mpml_graph_static/zigzag/multipers.o	9a2b7b576f7f16a
+231	16397	1675909668000000000	/scratch/bell/mukher26/mpml_graph_static/zigzag/build/temp.linux-x86_64-cpython-39/scratch/bell/mukher26/mpml_graph_static/zigzag/multipers.o	9a2b7b576f7f16a
+257	16577	1675911626000000000	/scratch/bell/mukher26/mpml_graph_static/zigzag/build/temp.linux-x86_64-cpython-39/scratch/bell/mukher26/mpml_graph_static/zigzag/multipers.o	9a2b7b576f7f16a
+290	17660	1675912935000000000	/scratch/bell/mukher26/mpml_graph_static/zigzag/build/temp.linux-x86_64-cpython-39/scratch/bell/mukher26/mpml_graph_static/zigzag/multipers.o	9a2b7b576f7f16a
+44	17018	1679793102000000000	/scratch/bell/mukher26/mpml_graph_static/zigzag/build/temp.linux-x86_64-cpython-39/scratch/bell/mukher26/mpml_graph_static/zigzag/multipers.o	9a2b7b576f7f16a
+13	33166	1681688576281989022	/scratch1/mukher26/mpml_graph_repo/gril/build/temp.linux-x86_64-cpython-39/scratch1/mukher26/mpml_graph_repo/gril/multipers.o	9d57bdffb2f12246
