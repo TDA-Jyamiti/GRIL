@@ -29,7 +29,7 @@ You may use `run_graph_experiment.sh` to reproduce the results in the paper. Ple
 Run this script to reproduce the experiment on PROTEINS dataset.
 
 ## Citation
-The paper is under review in ICML 2023. More details coming soon.
+The paper is under review in ICML TAGML 2023 Workshop. More details coming soon.
 ![GRIL as topological discriminator!](/gril_topo_discrim_img.png "GRIL as topo discriminator")
 
 
