@@ -1,5 +1,10 @@
 # A 2-parameter Persistence Layer for Learning
 
+## Group Information
+
+This project is developed by [Soham Mukherjee](https://www.cs.purdue.edu/homes/mukher26/), [Cheng Xin](https://github.com/jackal092927), [Shreyas N. Samaga](https://samagashreyas.github.io) under the [CGTDA](https://www.cs.purdue.edu/homes/tamaldey/CGTDAwebsite/) research group at Purdue University lead by [Dr. Tamal K. Dey](https://www.cs.purdue.edu/homes/tamaldey/).
+
+
 ## Instructions
 First clone this repo to say $MPML. Then create a conda environment by
 
@@ -27,6 +32,10 @@ You may use `run_graph_experiment.sh` to reproduce the results in the paper. Ple
     ./run_graph_experiment.sh PROTEINS 
 
 Run this script to reproduce the experiment on PROTEINS dataset.
+
+## Acknowledgements
+
+This codebase heavily uses `Fast Computation of Zigzag Persistence` for authored by [Tao Hou](https://taohou01.github.io). The repository for Fast Zigzag can be found here [https://github.com/taohou01/fzz](https://github.com/taohou01/fzz). 
 
 ## Citation
 The paper is under review in ICML TAGML 2023 Workshop. More details coming soon.
