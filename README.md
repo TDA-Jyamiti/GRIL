@@ -35,7 +35,7 @@ Run this script to reproduce the experiment on PROTEINS dataset.
 
 ## Acknowledgements
 
-This codebase heavily uses `Fast Computation of Zigzag Persistence` for authored by [Tao Hou](https://taohou01.github.io). The repository for Fast Zigzag can be found here [https://github.com/taohou01/fzz](https://github.com/taohou01/fzz). 
+This codebase heavily uses `Fast Computation of Zigzag Persistence` authored by [Tao Hou](https://taohou01.github.io). The repository for FastZigzag can be found here [https://github.com/taohou01/fzz](https://github.com/taohou01/fzz). 
 
 ## Citation
 The paper is under review in ICML TAGML 2023 Workshop. More details coming soon.
