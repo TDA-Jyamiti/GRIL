@@ -26,7 +26,7 @@ First clone this repo to say $MPML. Then create a conda environment by
 Then we need to compile mpml.
 
     cd $MPML
-    cd zigzag
+    cd gril
     python setup.py build install
 
 Please follow `experiments.ipynb` for instructions on how to run the code. You should be able to reproduce the code.
