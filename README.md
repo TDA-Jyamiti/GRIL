@@ -41,6 +41,12 @@ You may use `run_graph_experiment.sh` to reproduce the results in the paper. Ple
 
 Run this script to reproduce the experiment on PROTEINS dataset.
 
+## License
+
+THIS SOFTWARE IS PROVIDED "AS-IS". THERE IS NO WARRANTY OF ANY KIND. NEITHER THE AUTHORS NOR PURDUE UNIVERSITY WILL BE LIABLE FOR ANY DAMAGES OF ANY KIND, EVEN IF ADVISED OF SUCH POSSIBILITY.
+
+This software was developed (and is copyrighted by) the CGTDA research group at Purdue University. Please do not redistribute this software. This program is for academic research use only. This software uses the Boost and phat library, which are covered under their own licenses.
+
 
 ## Citation
 The paper is under review in ICML TAGML 2023 Workshop. More details coming soon.
