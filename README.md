@@ -1,9 +1,14 @@
 # A 2-parameter Persistence Layer for Learning
 
+This codebase contains implementation of Generalized Rank Invariant Landscape (GRIL). The accompanying paper can be found here [GRIL: A -parameter Persistence Based Vectorization for Machine Learning](https://arxiv.org/pdf/2304.04970). 
+
 ## Group Information
 
-This project is developed by *Anonymous Authors*
-<!-- [Soham Mukherjee](https://www.cs.purdue.edu/homes/mukher26/), [Cheng Xin](https://github.com/jackal092927), [Shreyas N. Samaga](https://samagashreyas.github.io) under the [CGTDA](https://www.cs.purdue.edu/homes/tamaldey/CGTDAwebsite/) research group at Purdue University lead by [Dr. Tamal K. Dey](https://www.cs.purdue.edu/homes/tamaldey/). -->
+This project is developed by [Soham Mukherjee](https://www.cs.purdue.edu/homes/mukher26/), [Cheng Xin](https://github.com/jackal092927), [Shreyas N. Samaga](https://samagashreyas.github.io) under the [CGTDA](https://www.cs.purdue.edu/homes/tamaldey/CGTDAwebsite/) research group at Purdue University lead by [Dr. Tamal K. Dey](https://www.cs.purdue.edu/homes/tamaldey/).
+
+## Acknowledgements
+
+This codebase heavily uses `Fast Computation of Zigzag Persistence` authored by [Tao Hou](https://taohou01.github.io). The repository for FastZigzag can be found here [https://github.com/taohou01/fzz](https://github.com/taohou01/fzz). The software is based on the following paper [Fast Computation of Zigzag Persistence](https://arxiv.org/pdf/2204.11080.pdf). 
 
 
 ## Instructions
@@ -24,7 +29,9 @@ Then we need to compile mpml.
     cd zigzag
     python setup.py build install
 
-Please follow `experiments.ipynb` for instructions on how to run the code.
+Please follow `experiments.ipynb` for instructions on how to run the code. You should be able to reproduce the code.
+
+![GRIL as topological discriminator!](/gril_topo_discrim_img.png "GRIL as topo discriminator")
 
 ## Graph Experiments
 You may use `run_graph_experiment.sh` to reproduce the results in the paper. Please download the precomputed landscapes from this [link](https://drive.google.com/file/d/1WWXCk3X5aKoHTlybmCnB9YLnieqpe8Mp/view?usp=share_link) and unzip the zip file to train the model faster. After unzipping it should have a directory called `graph_landscapes`.
@@ -34,13 +41,10 @@ You may use `run_graph_experiment.sh` to reproduce the results in the paper. Ple
 
 Run this script to reproduce the experiment on PROTEINS dataset.
 
-## Acknowledgements
-
-This codebase heavily uses `Fast Computation of Zigzag Persistence` authored by [Tao Hou](https://taohou01.github.io). The repository for FastZigzag can be found here [https://github.com/taohou01/fzz](https://github.com/taohou01/fzz). 
 
 ## Citation
 The paper is under review in ICML TAGML 2023 Workshop. More details coming soon.
-![GRIL as topological discriminator!](/gril_topo_discrim_img.png "GRIL as topo discriminator")
+
 
 
 
