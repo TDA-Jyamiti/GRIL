@@ -49,7 +49,7 @@ This software was developed (and is copyrighted by) the CGTDA research group at 
 
 
 ## Citation
-The paper is under review in ICML TAGML 2023 Workshop. More details coming soon.
+The paper is accepted in ICML TAGML 2023 Workshop. More details coming soon.
 
 
 
