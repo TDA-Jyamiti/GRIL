@@ -6,7 +6,7 @@ import os
 from scipy import sparse
 from typing import Tuple, List
 import argparse
-import zigzag.zz as zz
+import gril.gril as gril
 import torch
 import torch.nn as nn
 from scipy.spatial import Delaunay
@@ -81,7 +81,7 @@ def get_filtration(x, edges, tri, tri_converted, nn_k=6):
     tri_val_2 = tri_val_2.max(1)[0]
 
     f_v = torch.cat([d_xx.view((-1, 1)), torch.zeros((d_xx.size(0), 1))], dim=1)
-    e_val = torch.cat([e_val.view((-1, 1)), e_val_y.view((-1, 1))], dim=1)
+    e_val = torch.cat([e_val.view((-1, 1)), e_val_y.view((-1, 1))], dim=1) + 0.01
     tri_val = torch.cat([tri_val.view((-1, 1)), tri_val_2.view((-1, 1))], dim=1) + 0.02
 
     filt = torch.cat([f_v, e_val, tri_val], dim=0)
