@@ -71,7 +71,7 @@ def get_hks(L, K, ts):
 #     filt = torch.tensor(f, device=x.device)
 #     return filt, edges
 
-def get_hks_filtration(num_nodes, edge_index, nn_k=6):
+def get_hks_rc_bifiltration(num_nodes, edge_index, nn_k=6):
     g = nx.Graph()
     g.add_nodes_from(range(num_nodes))
     edges = pre_process_edges(edge_index)
@@ -195,7 +195,7 @@ class MultiPersLandscapeValLayer_no_node_feats(nn.Module):
         # self.grid_resolution = grid_resolution
         self.sample_pts = self.sample_grid()
         self.hom_rank = hom_rank
-        self.filt_layer = get_hks_filtration
+        self.filt_layer = get_hks_rc_bifiltration
         self.mpl = zz.MultiPers(hom_rank=hom_rank, l=l, res=res, step=step, ranks=list(range(1, 6)))
         self.mpl.set_max_jobs(40)
 
