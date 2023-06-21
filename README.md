@@ -1,9 +1,11 @@
 # A 2-parameter Persistence Layer for Learning
 
-This codebase contains implementation of Generalized Rank Invariant Landscape (GRIL). The accompanying paper can be found here [GRIL: A -parameter Persistence Based Vectorization for Machine Learning](https://arxiv.org/pdf/2304.04970). 
+This codebase contains implementation of Generalized Rank Invariant Landscape (GRIL). The accompanying paper can be found here [GRIL: A 2-parameter Persistence Based Vectorization for Machine Learning](https://arxiv.org/pdf/2304.04970). 
 
 ## Group Information
 
+
+![CGTDA group at Purdue](/logo.jpg "CGTDA group at Purdue")
 This project is developed by [Soham Mukherjee](https://www.cs.purdue.edu/homes/mukher26/), [Cheng Xin](https://github.com/jackal092927), [Shreyas N. Samaga](https://samagashreyas.github.io) under the [CGTDA](https://www.cs.purdue.edu/homes/tamaldey/CGTDAwebsite/) research group at Purdue University lead by [Dr. Tamal K. Dey](https://www.cs.purdue.edu/homes/tamaldey/).
 
 ## Acknowledgements
@@ -31,9 +33,11 @@ Then we need to compile mpml.
 
 Please follow `experiments.ipynb` for instructions on how to run the code. You should be able to reproduce the code.
 
-![GRIL as topological discriminator!](/gril_topo_discrim_img.png "GRIL as topo discriminator")
+![GRIL as topological discriminator](/gril_topo_discrim_img.png "GRIL as topo discriminator")
 
 ## Graph Experiments
+
+
 You may use `run_graph_experiment.sh` to reproduce the results in the paper. Please download the precomputed landscapes from this [link](https://drive.google.com/file/d/1WWXCk3X5aKoHTlybmCnB9YLnieqpe8Mp/view?usp=share_link) and unzip the zip file to train the model faster. After unzipping it should have a directory called `graph_landscapes`.
 
 
@@ -49,6 +53,7 @@ This software was developed (and is copyrighted by) the CGTDA research group at 
 
 
 ## Citation
+
 The paper is accepted in ICML TAGML 2023 Workshop. More details coming soon.
 
 
