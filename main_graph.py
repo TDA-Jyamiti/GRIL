@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 from torch.autograd import Function
 import numpy as np
-import zigzag.zz as zz
+import gril.gril as gril
 import os
 import argparse
 import networkx as nx
@@ -164,7 +164,7 @@ class MultiPersLandscapeValLayer(nn.Module):
         self.sample_pts = self.sample_grid()
         self.hom_rank = hom_rank
         self.filt_layer = get_filtration
-        self.mpl = zz.MultiPers(hom_rank=hom_rank, l=l, res=res, ranks=list(range(1, 6)))
+        self.mpl = gril.MultiPers(hom_rank=hom_rank, l=l, res=res, ranks=list(range(1, 6)))
         self.mpl.set_max_jobs(40)
 
     def sample_grid(self):
@@ -196,7 +196,7 @@ class MultiPersLandscapeValLayer_no_node_feats(nn.Module):
         self.sample_pts = self.sample_grid()
         self.hom_rank = hom_rank
         self.filt_layer = get_hks_rc_bifiltration
-        self.mpl = zz.MultiPers(hom_rank=hom_rank, l=l, res=res, step=step, ranks=list(range(1, 6)))
+        self.mpl = gril.MultiPers(hom_rank=hom_rank, l=l, res=res, step=step, ranks=list(range(1, 6)))
         self.mpl.set_max_jobs(40)
 
     def sample_grid(self):

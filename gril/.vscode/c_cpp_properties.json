@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/homes/mukher26/scratch/condaenvs/stnets",
+                "/homes/mukher26/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include",
+                "/p/gcc-9.3.0/bin/gcc",
+                "/homes/mukher26/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include/torch/csrc/api/include"
+            ],
+            "defines": [],
+            "compilerPath": "/p/gcc-9.3.0/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

@@ -396,7 +396,7 @@ Tensor Multipers::find_maximal_worm_for_rank_k(const Tensor &filtration,
     int d_min = 1;
     // std::cout << "Point: " << (p.first * grid_resolution_x) << " , " << (p.second * grid_resolution_x) << std::endl;
     int d = 1;
-    int ans = -1;
+    int ans = 0;
     // auto rank_info = (this->hom_rank == 0) ? rank_info_h0 : rank_info_h1;
     int num_full_bars_for_this_k;
     while(d_min <= d_max){
@@ -420,19 +420,14 @@ Tensor Multipers::find_maximal_worm_for_rank_k(const Tensor &filtration,
         else{
             num_full_bars_for_this_k = rank_info[this->hom_rank]->at(d);
         }
-        // std::cout <<" Rank = " << num_full_bars << " d = " << (d * grid_resolution_x) << " Query rank = "<< rank << std::endl;
-        if(num_full_bars_for_this_k == rank){
+        // std::cout <<" Rank = " << num_full_bars_for_this_k << " d = " << d << " Query rank = "<< rank << std::endl;
+        if(num_full_bars_for_this_k >= rank){
             ans = d;
             d_min = d + 1;
         }
-        if (num_full_bars_for_this_k > rank)
-            d_min = d + 1;
-        else if (num_full_bars_for_this_k < rank)
+        else
             d_max = d - 1;
     }
-    if (ans == -1)
-        ans = d_max;
-    
     // auto scale = (grid_resolution_x * grid_resolution_x) + (grid_resolution_y * grid_resolution_y);
     // auto scaled_res = (double)res * std::sqrt(scale);
     auto scaled_res = (double)ans * res;
@@ -542,15 +537,41 @@ std::vector<Tensor> Multipers::compute_landscape(const std::vector<Point>& pts, 
     
     return ret;
 }
+// Tensor Multipers::compute_grad_matrix(const std::vector<Point>& pts, const std::vector<std::tuple<Tensor, vector<Simplex>>> &batch){
+//     const auto num_points = pts.size();
+//     at::set_num_threads(this->max_threads);
+    
+//     auto arg = batch[0];
+//     const auto& filtration = std::get<0>(arg);
+//     const auto& simplices = std::get<1>(arg);
+//     const auto f_x = filtration.index({"...", 0});
+//     const auto f_y = filtration.index({"...", 1});
+//     const int l = this->l;
+//     const auto tensopt_real = torch::TensorOptions().dtype(filtration.dtype()).device(torch::kCPU);
+//     const auto shift = torch::arange(-l, l+1, tensopt_real);
+//     // (torch.isclose(5 copies of f_x, x-lines) && f_x <= px) && (f_y <= py + l * d) line. Assign -1 to them. 
+//     // torch.isclose(5 copies of f_x, x-lines) && f_x > px. Assign +1 to them.
 
+//     for(auto i = 0; i < num_points; i++){
+//         const auto &point = pts[i];
+        
+
+//     }
+
+
+// }
 
 void Multipers::set_grid_resolution_and_lower_left_corner(const Tensor& filtration){
     
     const auto f_min = std::get<0>(filtration.min(0));
-    this->ll_x = f_min.index({0}).item<float>();
-    this->ll_y = f_min.index({1}).item<float>();
+    // this->ll_x = f_min.index({0}).item<float>();
+    // this->ll_y = f_min.index({1}).item<float>();
+    this->ll_x = 0.0;
+    this->ll_y = 0.0;
     // std::cout << "dx " << delta_x << " dy " << delta_y << " ll_x " << ll_x << " ll_y " << ll_y << std::endl;
     // std::cout << "f_max " << f_max << " f_min " << f_min << std::endl;
+    // std::cout << " ll_x " << ll_x << " ll_y " << ll_y << " f_min " << f_min << std::endl;
+
 }
 
 

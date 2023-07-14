@@ -29,8 +29,7 @@ Then we need to compile mpml.
 
     cd $MPML
     cd gril
-    python setup.py build install
-
+    python -m pip install -e .
 Please follow `experiments.ipynb` for instructions on how to run the code. You should be able to reproduce the code.
 
 ![GRIL as topological discriminator](/gril_topo_discrim_img.png "GRIL as topo discriminator")

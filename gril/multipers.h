@@ -112,6 +112,7 @@ class Multipers{
 
             }
         }
+        // Tensor compute_grad_matrix(const std::vector<Point>& pts, const std::vector<std::tuple<Tensor, vector<Simplex>>> &batch);
 
 
 

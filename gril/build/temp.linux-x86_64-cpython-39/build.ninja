@@ -1,7 +1,7 @@
 ninja_required_version = 1.3
-cxx = c++
+cxx = /p/gcc-9.3.0/bin/g++-9
 
-cflags = -pthread -B /homes/mukher26/scratch/condaenvs/stnets/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /homes/mukher26/scratch/condaenvs/stnets/include -I/homes/mukher26/scratch/condaenvs/stnets/include -fPIC -O2 -isystem /homes/mukher26/scratch/condaenvs/stnets/include -fPIC -I/homes/mukher26/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include -I/homes/mukher26/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/homes/mukher26/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include/TH -I/homes/mukher26/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include/THC -I/homes/mukher26/scratch/condaenvs/stnets/include/python3.9 -c
+cflags = -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /homes/mukher26/scratch/condaenvs/stnets/include -I/homes/mukher26/scratch/condaenvs/stnets/include -fPIC -O2 -isystem /homes/mukher26/scratch/condaenvs/stnets/include -fPIC -I/homes/mukher26/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include -I/homes/mukher26/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/homes/mukher26/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include/TH -I/homes/mukher26/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include/THC -I/homes/mukher26/scratch/condaenvs/stnets/include/python3.9 -c
 post_cflags = -fopenmp -O0 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=mpml -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
 ldflags = 
 
@@ -12,7 +12,7 @@ rule compile
 
 
 
-build /scratch1/mukher26/mpml_graph_repo/gril/build/temp.linux-x86_64-cpython-39/scratch1/mukher26/mpml_graph_repo/gril/./multipers.o: compile /scratch1/mukher26/mpml_graph_repo/gril/multipers.cpp
+build /scratch1/mukher26/mpml_graph_static/gril/build/temp.linux-x86_64-cpython-39/scratch1/mukher26/mpml_graph_static/gril/./multipers.o: compile /scratch1/mukher26/mpml_graph_static/gril/multipers.cpp
 
 
 
