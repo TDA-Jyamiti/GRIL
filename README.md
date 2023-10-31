@@ -53,8 +53,23 @@ This software was developed (and is copyrighted by) the CGTDA research group at 
 
 ## Citation
 
-The paper is accepted in ICML TAGML 2023 Workshop. More details coming soon.
+The paper is accepted in ICML TAGML 2023 Workshop. 
+```
 
+@InProceedings{pmlr-v221-xin23a,
+  title = 	 {GRIL: A $2$-parameter Persistence Based Vectorization for Machine Learning},
+  author =       {Xin, Cheng and Mukherjee, Soham and Samaga, Shreyas N. and Dey, Tamal K.},
+  booktitle = 	 {Proceedings of 2nd Annual Workshop on Topology, Algebra, and Geometry in Machine Learning (TAG-ML)},
+  pages = 	 {313--333},
+  year = 	 {2023},
+  volume = 	 {221},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {28 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v221/xin23a/xin23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v221/xin23a.html},
+}
+```
 
 
 
