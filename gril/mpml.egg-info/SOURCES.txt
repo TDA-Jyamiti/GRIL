@@ -1,7 +1,0 @@
-setup.py
-/scratch1/mukher26/mpml_graph_repo/gril/./multipers.cpp
-/scratch1/mukher26/mpml_graph_static/gril/./multipers.cpp
-mpml.egg-info/PKG-INFO
-mpml.egg-info/SOURCES.txt
-mpml.egg-info/dependency_links.txt
-mpml.egg-info/top_level.txt
