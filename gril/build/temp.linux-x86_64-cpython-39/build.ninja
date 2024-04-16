@@ -1,0 +1,24 @@
+ninja_required_version = 1.3
+cxx = /p/gcc-9.3.0/bin/g++-9
+
+cflags = -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /homes/ssamaga/scratch/condaenvs/stnets/include -I/homes/ssamaga/scratch/condaenvs/stnets/include -fPIC -O2 -isystem /homes/ssamaga/scratch/condaenvs/stnets/include -fPIC -I/homes/ssamaga/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include -I/homes/ssamaga/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/homes/ssamaga/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include/TH -I/homes/ssamaga/scratch/condaenvs/stnets/lib/python3.9/site-packages/torch/include/THC -I/homes/ssamaga/scratch/condaenvs/stnets/include/python3.9 -c
+post_cflags = -fopenmp -O0 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=mpml -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+cuda_dlink_post_cflags = 
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+
+
+
+
+build /u/scratch1/ssamaga/mpml/gril/build/temp.linux-x86_64-cpython-39/u/scratch1/ssamaga/mpml/gril/./multipers.o: compile /u/scratch1/ssamaga/mpml/gril/multipers.cpp
+
+
+
+
+
+
