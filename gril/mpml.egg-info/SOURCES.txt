@@ -1,7 +1,0 @@
-setup.py
-/u/scratch1/ssamaga/GRIL/gril/./multipers.cpp
-/u/scratch1/ssamaga/mpml/gril/./multipers.cpp
-mpml.egg-info/PKG-INFO
-mpml.egg-info/SOURCES.txt
-mpml.egg-info/dependency_links.txt
-mpml.egg-info/top_level.txt
