@@ -118,7 +118,7 @@ std::vector<std::tuple<bool, Integer>> Multipers::compute_filtration_along_bound
     manual_birth_pts = simplices_birth_death.size();
 
 
-    for (auto i=0; i < num_grid_pts_along_boundary- 1; i++) {
+    for (auto i=0; i < num_grid_pts_along_boundary- 2; i++) {
         x_new = grid_pts_along_boundary[i + 1][0];
         y_new = grid_pts_along_boundary[i + 1][1];
         x_old = grid_pts_along_boundary[i][0];
@@ -202,8 +202,8 @@ std::vector<std::tuple<bool, Integer>> Multipers::compute_filtration_along_bound
 
         // # For Tao's code, manual deletion
         manual_death_pts = (int)simplices_birth_death.size();
-        x_last = grid_pts_along_boundary.index({-1})[0];
-        y_last = grid_pts_along_boundary.index({-1})[1];
+        x_last = grid_pts_along_boundary.index({-2})[0];
+        y_last = grid_pts_along_boundary.index({-2})[1];
         temp = (x_last >= f.index({"...", 0})) & (y_last >= f.index({"...", 1}));
         const Tensor ind = torch::where(temp)[0];
         ch = false;
@@ -402,6 +402,7 @@ Tensor Multipers::find_maximal_worm_for_rank_k(const Tensor &filtration,
     while(d_min <= d_max){
         d = (d_min + d_max) / 2;        
         if(rank_info[this->hom_rank]->count(d) == 0){
+        // if(true){
             std::vector<int> num_full_bars = {0, 0};
             num_full_bars_for_specific_d(filtration,  
                                         f_x_sorted,
@@ -416,6 +417,7 @@ Tensor Multipers::find_maximal_worm_for_rank_k(const Tensor &filtration,
             (*rank_info[0])[d] = num_full_bars[0];
             (*rank_info[1])[d] = num_full_bars[1];
             num_full_bars_for_this_k = num_full_bars[this->hom_rank];
+            // std::cout << "Hom rank " << this->hom_rank << std::endl;
         }
         else{
             num_full_bars_for_this_k = rank_info[this->hom_rank]->at(d);
@@ -533,7 +535,7 @@ std::vector<Tensor> Multipers::compute_landscape(const std::vector<Point>& pts, 
         start_id = end_id;
     }
    
-    std::cout << "Took " << duration.count() << " ms" << std::endl;
+    // std::cout << "Took " << duration.count() << " ms" << std::endl;
     
     return ret;
 }
@@ -573,6 +575,7 @@ void Multipers::set_grid_resolution_and_lower_left_corner(const Tensor& filtrati
     // std::cout << " ll_x " << ll_x << " ll_y " << ll_y << " f_min " << f_min << std::endl;
 
 }
+
 
 
 PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {

@@ -106,9 +106,11 @@ class Multipers{
             this->hom_rank = hom_rank;
         }
         void refresh_rank_info(){
+            this->rank_info_h0.clear();
+            this->rank_info_h1.clear();
             for(auto i = 0; i < num_points_guess; i++){
-                this->rank_info_h0[i] = new std::map<int, int>();
-                this->rank_info_h1[i] = new std::map<int, int>();
+                this->rank_info_h0.push_back(new std::map<int, int>());
+                this->rank_info_h1.push_back(new std::map<int, int>());
 
             }
         }
