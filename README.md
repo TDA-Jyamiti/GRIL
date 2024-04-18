@@ -1,6 +1,6 @@
 # A 2-parameter Persistence Layer for Learning
 
-This codebase contains implementation of Generalized Rank Invariant Landscape (GRIL). The accompanying paper can be found here [GRIL: A 2-parameter Persistence Based Vectorization for Machine Learning](https://arxiv.org/pdf/2304.04970). 
+This codebase contains implementation of Generalized Rank Invariant Landscape (GRIL). The accompanying paper can be found at [GRIL: A 2-parameter Persistence Based Vectorization for Machine Learning](https://arxiv.org/pdf/2304.04970). 
 
 ## Group Information
 
