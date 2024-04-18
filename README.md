@@ -6,11 +6,11 @@ This codebase contains implementation of Generalized Rank Invariant Landscape (G
 
 
 ![CGTDA group at Purdue](/logo.jpg "CGTDA group at Purdue")
-This project is developed by [Soham Mukherjee](https://www.cs.purdue.edu/homes/mukher26/), [Cheng Xin](https://github.com/jackal092927), [Shreyas N. Samaga](https://samagashreyas.github.io) under the [CGTDA](https://www.cs.purdue.edu/homes/tamaldey/CGTDAwebsite/) research group at Purdue University lead by [Dr. Tamal K. Dey](https://www.cs.purdue.edu/homes/tamaldey/).
+This project is developed by [Soham Mukherjee](https://www.cs.purdue.edu/homes/mukher26/), [Cheng Xin](https://github.com/jackal092927), [Shreyas N. Samaga](https://samagashreyas.github.io) and [Tamal Dey](https://www.cs.purdue.edu/homes/tamaldey/) under the [CGTDA](https://www.cs.purdue.edu/homes/tamaldey/CGTDAwebsite/) research group at Purdue University.
 
 ## Acknowledgements
 
-This codebase heavily uses `Fast Computation of Zigzag Persistence` authored by [Tao Hou](https://taohou01.github.io). The repository for FastZigzag can be found here [https://github.com/taohou01/fzz](https://github.com/taohou01/fzz). The software is based on the following paper [Fast Computation of Zigzag Persistence](https://arxiv.org/pdf/2204.11080.pdf). 
+This codebase heavily uses `Fast Computation of Zigzag Persistence`. The repository for FastZigzag can be found here [https://github.com/taohou01/fzz](https://github.com/TDA-Jyamiti/fzz). The software is based on the following paper [Fast Computation of Zigzag Persistence](https://arxiv.org/pdf/2204.11080.pdf). 
 
 
 ## Instructions
