@@ -6,7 +6,7 @@ This codebase contains implementation of Generalized Rank Invariant Landscape (G
 
 
 ![CGTDA group at Purdue](/logo.jpg "CGTDA group at Purdue")
-This project is developed by [Soham Mukherjee](https://www.cs.purdue.edu/homes/mukher26/), [Cheng Xin](https://github.com/jackal092927), [Shreyas N. Samaga](https://samagashreyas.github.io) and [Tamal Dey](https://www.cs.purdue.edu/homes/tamaldey/) under the [CGTDA](https://www.cs.purdue.edu/homes/tamaldey/CGTDAwebsite/) research group at Purdue University.
+This project is developed by [Soham Mukherjee](https://www.cs.purdue.edu/homes/mukher26/), [Cheng Xin](https://github.com/jackal092927), [Shreyas N. Samaga](https://samagashreyas.github.io) and [Tamal Dey](https://www.cs.purdue.edu/homes/tamaldey/) under the [CGTDA](https://www.cs.purdue.edu/homes/tamaldey/CGTDAwebsite/) research group at Purdue University led by Prof. [Tamal Dey](https://www.cs.purdue.edu/homes/tamaldey/).
 
 ## Acknowledgements
 
